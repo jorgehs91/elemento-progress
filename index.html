@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Documentd</title>
+    <title>Elemento Progress HTML5</title>
 </head>
 <body>
-    
+    <progress value="20" max="100"></progress>
+
+    <style>
+        progress[value]{
+            -webkit-appearance: none;
+            appearance: none;
+        }
+        progress[value]::-webkit-progress-bar{
+            background: #cecece;
+            border-radius: 10px;
+        }
+        progress[value]::-webkit-progress-value{
+            background: red;
+            border-radius: 10px;
+        }
+    </style>
 </body>
 </html>
